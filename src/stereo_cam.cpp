@@ -36,7 +36,7 @@ ArduCamNode::ArduCamNode()
         right_img_pub = this->create_publisher<sensor_msgs::msg::Image>(
             "right/image_raw", rclcpp::SensorDataQoS());
 
-        double fps = 15.0;
+        double fps = 30.0;
         timer = this->create_wall_timer(
             std::chrono::milliseconds((int)(1000.0 / fps)),
             std::bind(&ArduCamNode::run, this));

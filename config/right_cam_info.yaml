@@ -1,5 +1,5 @@
 image_width: 640
-image_height: 480
+image_height: 720
 distortion_model: plumb_bob
 camera_matrix:
   rows: 3
